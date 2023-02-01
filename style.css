@@ -1,20 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #080A10;
-    padding: 4rem;
-
-    display: grid;
-    place-items: center;
+:root {
+    --color-light-yellow: hsla(67, 97%, 76%, 1);
+    --color-background-primary: #080A10;
+    --color-paragraph: hsla(240, 1%, 68%, 1);
 }
 
-svg {
+body {
+    background-color: var(--color-background-primary);
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+header {
+    margin-top: 8rem;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 96px;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 86px;
+    text-align: center;
+}
+
+p {
+    color: var(--color-paragraph);
+}
+
+nav {
+    min-height: 5rem;
+    padding: 4rem 0;
+}
+
+nav svg {
     animation:
         cyberpunk-glitch 7s step-end infinite;
+}
+
+button {
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: var(--color-light-yellow);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.light-yellow {
+    color: var(--color-light-yellow);
+}
+
+.header__content {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+.header__content>p {
+    font-size: 18px;
+}
+
+.header__content__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.special__link {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    justify-items: stretch;
 }
 
 @keyframes skew-glitch {
