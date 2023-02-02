@@ -23,6 +23,12 @@ header {
     margin-top: 8rem;
 }
 
+.header__subheading {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -151,6 +157,6 @@ a {
     67%,
     92% {
         clip-path: none;
-        filter: drop-shadow(0 0 0.75rem pink);
+        filter: drop-shadow(0 0 0.75rem yellow);
     }
 }
